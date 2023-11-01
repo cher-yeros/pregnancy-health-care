@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "110648234560",
+    "firebase_url": "https://new-phc-5bdad.firebaseio.com",
+    "project_id": "new-phc-5bdad",
+    "storage_bucket": "new-phc-5bdad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110648234560:android:cb9dff91641ca0d08f05a5",
+        "android_client_info": {
+          "package_name": "com.gonder.pregnancyhealthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110648234560-1c3594lrknufgimc9o9imqtfbddv20cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnxr_a5jZ4cmAA_rcB5tBUyB4JsGUEces"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110648234560-1c3594lrknufgimc9o9imqtfbddv20cp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

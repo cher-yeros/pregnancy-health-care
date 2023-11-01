@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.doctor.DocLandingActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/clerk_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/send_updated_report"-->
+<!--            android:layout_width="150sp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5sp"-->
+<!--            android:layout_marginEnd="5sp"-->
+<!--            android:layout_marginRight="5sp"-->
+<!--            android:onClick="sendUpdatedReport"-->
+<!--            app:cardElevation="5sp"-->
+<!--            app:cardMaxElevation="5sp"-->
+<!--            tools:ignore="OnClick">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="5sp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/i5"-->
+<!--                    android:layout_width="60sp"-->
+<!--                    android:layout_height="60sp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginBottom="10sp"-->
+<!--                    android:contentDescription="Manage Account"-->
+<!--                    app:srcCompat="@drawable/ic_send_report" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/v5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1sp"-->
+<!--                    android:background="#8c8c8c" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/t5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10sp"-->
+<!--                    android:layout_marginBottom="10sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Send Updated Report"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view_list"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            app:cardElevation="5sp"
+            app:cardMaxElevation="5sp"
+            tools:ignore="OnClick">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <ImageView
+                    android:id="@+id/i4"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10sp"
+                    app:srcCompat="@drawable/ic_pregnant" />
+
+                <View
+                    android:id="@+id/v4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#8c8c8c" />
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:gravity="center"
+                    android:text="@string/view_list"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/receive_notification"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:onClick="getReport"
+            app:cardElevation="5sp"
+            app:cardMaxElevation="5sp"
+            tools:ignore="OnClick">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <ImageView
+                    android:id="@+id/i6"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10sp"
+                    app:srcCompat="@drawable/ic_notification" />
+
+                <View
+                    android:id="@+id/v6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#8c8c8c" />
+
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:gravity="center"
+                    android:text="Receive Notification"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lab_result"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_marginRight="5sp"
+            android:onClick="viewLabResult"
+            app:cardElevation="5sp"
+            app:cardMaxElevation="5sp"
+            android:layout_marginEnd="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <ImageView
+                    android:id="@+id/i3"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10sp"
+                    android:contentDescription="Manage Account"
+                    app:srcCompat="@drawable/ic_notify" />
+
+                <View
+                    android:id="@+id/v3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#8c8c8c" />
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:gravity="center"
+                    android:text="View Lab Result"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thelast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/give_consultation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_marginRight="5sp"
+            app:cardElevation="5sp"
+            app:cardMaxElevation="5sp"
+            tools:ignore="OnClick">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <ImageView
+                    android:id="@+id/i8"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10sp"
+                    android:contentDescription="Manage Account"
+                    app:srcCompat="@drawable/ic_consultation" />
+
+                <View
+                    android:id="@+id/v8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#8c8c8c" />
+
+                <TextView
+                    android:id="@+id/t8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:gravity="center"
+                    android:text="Give Consultation"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

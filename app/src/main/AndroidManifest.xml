@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gonder.pregnancyhealthcare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".ui.user.CareNotificationListActivity"></activity>
+        <activity android:name=".ui.doctor.NotificationListActivity" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".ui.technician.MothersListActivity" />
+        <activity android:name=".ui.user.MothersNotificationListActivity" />
+        <activity android:name=".ui.doctor.SeeUpdateLabResultActivity" />
+        <activity android:name=".ui.user.ViewConsultationActivity" />
+        <activity android:name=".ui.doctor.ViewLabResultActivity" />
+        <activity android:name=".ui.doctor.ViewListActivity" />
+        <activity android:name=".ui.admin.ReceivedUpdateReportActivity" />
+        <activity android:name=".ui.doctor.UpdateReportActivity" />
+        <activity android:name=".ui.doctor.SendUpdatedReportActivity" />
+        <activity android:name=".ui.technician.GenerateLabReportActivity" />
+        <activity android:name=".ui.user.MotherLandingActivity" />
+        <activity android:name=".ui.doctor.DocLandingActivity" />
+        <activity android:name=".ui.technician.LabTechnicianLandingActivity" />
+        <activity
+            android:name=".ui.admin.ClerkNavDrawer"
+            android:label="@string/title_activity_clerk_nav_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Login2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".util.ReminderBroadcast" />
+    </application>
+
+</manifest>

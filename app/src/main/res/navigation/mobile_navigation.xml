@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.AdminLandingFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_mothers_list"
+            app:destination="@id/mothers_list" />
+        <action
+            android:id="@+id/action_nav_home_to_physicians_list"
+            app:destination="@id/physicians_list" />
+        <action
+            android:id="@+id/action_nav_home_to_technicians_list"
+            app:destination="@id/technicians_list" />
+        <action
+            android:id="@+id/action_nav_home_to_send_notification"
+            app:destination="@id/send_notification" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_change_password"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_version"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+<!--        Mother thing -->
+    <fragment
+        android:id="@+id/mothers_list"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.mother.MothersListFragment"
+        android:label="Mothers List"
+        tools:layout="@layout/fragment_mothers_list" >
+        <action
+            android:id="@+id/action_mothers_list_to_add_mother"
+            app:destination="@id/add_mother" />
+        <action
+            android:id="@+id/action_mothers_list_to_mother_show_update_nav"
+            app:destination="@id/mother_show_update_nav" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_mother"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.mother.AddMotherFragment"
+        android:label="Add Mother"
+        tools:layout="@layout/fragment_add_mother" />
+
+    <fragment
+        android:id="@+id/mother_show_update_nav"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.mother.MotherShowUpdateFragment"
+        android:label="Mother Detail"
+        tools:layout="@layout/fragment_mother_show_update" />
+
+
+<!--        Physician thing-->
+
+    <fragment
+        android:id="@+id/add_physician"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.physician.AddPhysicianFragment"
+        android:label="Add Physician"
+        tools:layout="@layout/fragment_add_physician" />
+
+    <fragment
+        android:id="@+id/physician_show_update_nav"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.physician.PhysicianShowUpdateFragment"
+        android:label="Physician Detail"
+        tools:layout="@layout/fragment_physician_show_update" />
+
+    <fragment
+        android:id="@+id/physicians_list"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.physician.PhysiciansListFragment"
+        android:label="Physicians List"
+        tools:layout="@layout/fragment_physicians_list" >
+        <action
+            android:id="@+id/action_physicians_list_to_add_physician"
+            app:destination="@id/add_physician" />
+        <action
+            android:id="@+id/action_physicians_list_to_physician_show_update_nav"
+            app:destination="@id/physician_show_update_nav" />
+    </fragment>
+
+
+<!--    Lab technician thing-->
+
+        <fragment
+            android:id="@+id/add_technician"
+            android:name="com.gonder.pregnancyhealthcare.ui.admin.technician.AddLabTechnicianFragment"
+            android:label="Add Lab Technician"
+            tools:layout="@layout/fragment_add_lab_technician" />
+
+        <fragment
+            android:id="@+id/technician_show_update_nav"
+            android:name="com.gonder.pregnancyhealthcare.ui.admin.technician.LabTechnicianShowUpdateFragment"
+            android:label="Lab Technician Detail"
+            tools:layout="@layout/fragment_lab_technician_show_update" />
+
+    <fragment
+        android:id="@+id/technicians_list"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.technician.LabTechniciansListFragment"
+        android:label="Lab Technicians List"
+        tools:layout="@layout/fragment_lab_technicians_list" >
+
+        <action
+            android:id="@+id/action_technicians_list_to_technician_show_update_nav"
+            app:destination="@id/technician_show_update_nav" />
+
+        <action
+            android:id="@+id/action_technicians_list_to_add_technician"
+            app:destination="@id/add_technician" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/send_notification"
+        android:name="com.gonder.pregnancyhealthcare.ui.admin.SendNotificationFragment"
+        android:label="Send Notification"
+        tools:layout="@layout/fragment_send_notification">
+
+    </fragment>
+
+</navigation>
